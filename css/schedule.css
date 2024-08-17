@@ -1,0 +1,71 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    background-color: #FFFAF0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.schedule-page {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #FF69B4;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.schedule-item {
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 12px; /* Rounded corners */
+    color: #111;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: Inter, sans-serif;
+    height: 300px; /* Height to make it square */
+    width: 300px; /* Width to make it square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.schedule-item:hover {
+    background-color: #f7d8d0;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.7); /* Pink glowing light */
+}
+
+.schedule-item:active {
+    background-color: #f2c2b1;
+}
+
+/* Ensure only two items per row */
+.schedule-item:nth-of-type(odd) {
+    margin-right: 20px; /* Add spacing between items in the same row */
+}
+
+@media (max-width: 600px) {
+    .schedule-item {
+        height: 120px; /* Adjust height for smaller screens */
+        width: 120px; /* Adjust width for smaller screens */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}

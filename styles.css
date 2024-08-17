@@ -1,0 +1,64 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Cute Font', sans-serif; /* Custom font */
+  background-color: #FFEAD5; /* Background color */
+}
+
+#mCanvas {
+  display: block; /* Removes scrollbars */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+}
+
+.hi-pets {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 13rem;
+  color: #D95D50;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#start {
+  align-items: center;
+  background-color: #f09c92;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 20px; /* Increased font size */
+  justify-content: center;
+  line-height: 28px; /* Adjusted line height */
+  padding: 15px 40px; /* Increased padding for a bigger button */
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  bottom: 80px;
+  transform: translate(-50%, -50%); /* Center the button */
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#start:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 105, 180, 0.8); /* Pink glowing effect */
+}
+
+#start:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  #start {
+    padding: 15px 60px; /* Adjusted padding for larger screens */
+  }
+}

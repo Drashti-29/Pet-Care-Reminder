@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Reminder</title>
+    <link rel="stylesheet" href="../css/set_reminder.css">
+</head>
+<body>
+    <div class="set-reminder-page">
+        <h2>Set Pet Care Reminder</h2>
+        <form id="reminderForm">
+            <label for="activity">Activity:</label>
+            <select id="activity" name="activity">
+                <option value="feeding">Feeding</option>
+                <option value="grooming">Grooming</option>
+                <option value="bath">Cleaning</option>
+                <option value="vet">Vet Appointment</option>
+                <option value="medication">Medication</option>
+                <option value="other">Add new activity</option>
+            </select>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="reminderType">Reminder Type:</label>
+            <select id="reminderType" name="reminderType">
+                <option value="call">Call</option>
+                <option value="message">Message</option>
+                <option value="mail">Mail</option>
+            </select>
+
+            <label for="contact">Contact (Phone or Email):</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter phone number or email">
+
+            <label for="petName">Pet Name:</label>
+            <input type="text" id="petName" name="petName" placeholder="Enter pet's name">
+
+            <button type="submit">Set Reminder</button>
+        </form>
+        <div>
+            <button onclick="location.href='schedule.html'">Add Reminder</button>
+            <button onclick="location.href='view_reminder.html'">View Reminder</button>
+        </div>
+    </div>
+    <script src="../js/set_reminder.js"></script>
+</body>
+</html>

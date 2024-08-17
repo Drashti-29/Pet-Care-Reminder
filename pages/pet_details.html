@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Details</title>
+    <link rel="stylesheet" href="../css/pet_details.css">
+</head>
+<body>
+    <div class="pet-details-page">
+        <h2>Tell Me About Your Pet</h2>
+        <form id="petDetailsForm">
+            <label for="petName">Pet Name:</label>
+            <input type="text" id="petName" name="petName">
+
+            <label for="petType">Pet Type:</label>
+            <select id="petType" name="petType">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="hamster">Hamster</option>
+                <option value="fish">Fish</option>
+            </select>
+
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight">
+
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height">
+
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color">
+
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </form>
+        <button id="submit">Add Pet</button>
+        <button onclick="location.href='manage_pets.html'">Back to Manage Pets</button>
+    </div>
+    <!-- Audio elements for different pet sounds -->
+    <audio id="dogSound" src="../sounds/beat_bark.mp3"></audio>
+    <audio id="catSound" src="../sounds/cat_tune.mp3"></audio>
+    <audio id="birdSound" src="../sounds/awsome_birds_crip.mp3"></audio>
+    <audio id="rabbitSound" src="../sounds/rabbit_invasion.mp3"></audio>
+    <audio id="hamsterSound" src="../sounds/hamster_dance.mp3"></audio>
+    <audio id="fishSound" src="../sounds/bubbles.mp3"></audio>
+    <script src="../js/pet_details.js"></script>
+</body>
+</html>

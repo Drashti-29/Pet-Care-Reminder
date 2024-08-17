@@ -1,0 +1,88 @@
+/* Ensure full viewport height and background color */
+body, html {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  background-color: #FFFAF0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  }
+  
+  .set-reminder-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    color: #FF69B4;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  form {
+    background-color: #fee6e3;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    color: #111;
+    margin-bottom: 5px;
+  }
+  
+  input[type="time"], input[type="date"],input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    color: #111;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 105, 180, 0.8);
+    background-color: #ffdeda;
+  }
+  
+  button:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  /* Center the Set Reminder button */
+  #reminderForm button {
+    margin-top: 20px;
+  }
+  
